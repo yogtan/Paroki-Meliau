@@ -1,0 +1,14 @@
+
+.heroSejarah{
+    display: flex;
+    min-height: 110vh;
+    position: relative;
+    background-image: url(../img/Sejarah.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.blogSejarah{
+    min-height: 100vh;
+}
