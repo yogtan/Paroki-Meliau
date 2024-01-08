@@ -1,18 +1,92 @@
 @extends('layouts.main')
 
 @section('container')
-    <section class="hero align-items-center">
-        <div class="container">
-            <h1 style="font-size: 64px; color: #FF6A3D; font-weight: 700px ">SELAMAT DATANG</h1>
-            <h3 class="text-white">WEBSITE GEREJA ST. FRANSISKUS XAVERIUS</h3>
-            <h3 class="text-white">MELIAU, KALIMANTAN BARAT</h3>
+    <section class="hero align-items-center ">
+        <div class="container mt-5 text-left">
+            <div class="">
+                <p class="gereja-text">A House of Prayer For All People</h3>
+
+                <p class="prayer-text">
+                    St. Fransiskus
+
+                </p>
+                <p class="for-all-text">
+                    Xaverius
+                    <span style="color:#FF6A3D;;">Meliau </span>
+                </p>
+                <p class="for-all-text">
+                    <span style="color:#FF6A3D;;">Church</span>
+
+                </p>
+
+
+
+            </div>
+
         </div>
     </section>
 
 
-    <section class="jadwalMisa">
+    <section class="blog">
         <div class="container">
-            <h1 class="judulmisa pt-5">JADWAL MISA</h1>
+            <h1 class="judulmisa pt-5">Today With the Xaverian</h1>
+
+            <div class="row mt-5">
+                <div class="col-lg mt-3">
+                    <div class="card rounded-3 p-2 h-100" style="width: 25rem; height: 30rem;">
+                        <img src="img/berita.jpg" class="card-img-top rounded-3"
+                            style="object-fit: cover;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-tittle fw-semibold">IBADATAN HARIAN <h5>
+                                    <p class="card-text">12 Feb 2024</p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of
+                                        the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg mt-3">
+                    <div class="card rounded-3 p-2 h-100" style="width: 25rem; height: 30rem;">
+                        <img src="img/berita.jpg" class="card-img-top rounded-3"
+                            style="object-fit: cover;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-tittle fw-semibold">IBADATAN HARIAN <h5>
+                                    <p class="card-text">12 Feb 2024</p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of
+                                        the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg mt-3">
+                    <div class="card rounded-3 p-2 h-100" style="width: 25rem; height: 30rem;">
+                        <img src="img/berita.jpg" class="card-img-top rounded-3"
+                            style="object-fit: cover;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-tittle fw-semibold">IBADATAN HARIAN <h5>
+                                    <p class="card-text">12 Feb 2024</p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of
+                                        the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg mt-5">
+                    <div class="card rounded-3 p-2 h-100" style="width: 25rem; height: 30rem;">
+                        <img src="img/berita.jpg" class="card-img-top rounded-3"
+                            style="object-fit: cover;" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-tittle fw-semibold">IBADATAN HARIAN <h5>
+                                    <p class="card-text">12 Feb 2024</p>
+                                    <p class="card-text">Some quick example text to build on the card title and make up the
+                                        bulk of
+                                        the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
 
         </div>
     </section>
@@ -25,7 +99,7 @@
 
                 </div>
                 <div class="col-md-4">
-                    <h1 class="judulsejarah">SEJARAH GEREJA</h1>
+                    <h1 class="judulsejarah">Today With the Xaverian</h1>
                     <p class="text-white pt-3 col-md-14" style="text-align: justify;">
                         Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deleniti, in quidem molestiae
                         animi dolor cum magnam iure mollitia ad velit, iste laborum dolorum, delectus voluptatum
@@ -76,5 +150,4 @@
             </div>
         </div>
     </section>
-
 @endsection
