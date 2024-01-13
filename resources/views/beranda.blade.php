@@ -2,22 +2,13 @@
 
 @section('container')
     <section class="hero align-items-center ">
-        <div class="container mt-5 text-left">
-            <div class="">
-                <p class="gereja-text">A House of Prayer For All People</h3>
 
-                <p class="prayer-text">
-                    St. Fransiskus
+        <div class="container text-center">
+            <div class="tes ">
 
-                </p>
-                <p class="for-all-text">
-                    Xaverius
-                    <span style="color:#FF6A3D;;">Meliau </span>
-                </p>
-                <p class="for-all-text">
-                    <span style="color:#FF6A3D;;">Church</span>
+                <p class="gereja-text text-white">Paroki St. Fransiskus Xaverius Meliau</p>
+                <p class="gereja-text2">A House of Prayer For All People</h3>
 
-                </p>
 
 
 
@@ -27,126 +18,153 @@
     </section>
 
 
-    <section class="blog">
+    <section class="social-media mt-5">
         <div class="container">
-            <h1 class="judulmisa pt-5">Today With the Xaverian</h1>
+            <div class="row">
+                <!-- Kolom kiri untuk menampilkan gambar, teks, dan dua kartu -->
+                <div class="col-lg-6">
+                    <img class="object-fit-cover" style="width: 100%; height: 300px;" src="img/hero2.png" alt="">
+                    <p class="pt-2 foter1 fw-bold">ALL LITURGICAL</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-1 ml-3">
+                            <div class="card  jadwal-hover  h-100 w-100 rounded-2" style="width: 12rem; height: 10rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-left">Misa Harian</h5>
+                                    <p class="card-text fw-bold  ">Senin - Sabtu : <br><span class="fw-light"> 05.30 & 06.05
+                                            WIB </span></p>
+                                    <p class="card-text fw-bold lh-1 ">Senin-Jumat : <span class="fw-light">17.30 WIB</span>
+                                    </p>
 
-            <div class="row mt-5">
-                <div class="col-lg mt-3">
-                    <div class="card rounded-3 p-2 h-100" style="width: 25rem; height: 30rem;">
-                        <img src="img/berita.jpg" class="card-img-top rounded-3"
-                            style="object-fit: cover;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-tittle fw-semibold">IBADATAN HARIAN <h5>
-                                    <p class="card-text">12 Feb 2024</p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the
-                                        bulk of
-                                        the card's content.</p>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </div>
-                <div class="col-lg mt-3">
-                    <div class="card rounded-3 p-2 h-100" style="width: 25rem; height: 30rem;">
-                        <img src="img/berita.jpg" class="card-img-top rounded-3"
-                            style="object-fit: cover;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-tittle fw-semibold">IBADATAN HARIAN <h5>
-                                    <p class="card-text">12 Feb 2024</p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the
-                                        bulk of
-                                        the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg mt-3">
-                    <div class="card rounded-3 p-2 h-100" style="width: 25rem; height: 30rem;">
-                        <img src="img/berita.jpg" class="card-img-top rounded-3"
-                            style="object-fit: cover;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-tittle fw-semibold">IBADATAN HARIAN <h5>
-                                    <p class="card-text">12 Feb 2024</p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the
-                                        bulk of
-                                        the card's content.</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg mt-5">
-                    <div class="card rounded-3 p-2 h-100" style="width: 25rem; height: 30rem;">
-                        <img src="img/berita.jpg" class="card-img-top rounded-3"
-                            style="object-fit: cover;" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-tittle fw-semibold">IBADATAN HARIAN <h5>
-                                    <p class="card-text">12 Feb 2024</p>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the
-                                        bulk of
-                                        the card's content.</p>
+                        <div class="col-lg-4 col-md-6 mt-1 ml-3">
+                            <div class="card jadwal-hover h-100 w-100 rounded-2" style="width: 12rem; height: 10rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-left ">Mingguan</h5>
+                                    <p class="card-text fw-bold ">Sabtu : <span class="fw-light">16.30 WIB</span></p>
+                                    <p class="card-text fw-bold lh-1">Minggu : <span class="fw-light">08.00 WIB</span></p>
+
+
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
 
+                <!-- Kolom kanan untuk menampilkan tautan YouTube dan kartu -->
+                <div class="col-lg-6 text-right">
+                    <iframe style="width: 100%; height: 300px;" src="https://www.youtube.com/embed/MmhFmVhQtJg"
+                        frameborder="0" allowfullscreen></iframe>
+                    <p class="pt-2 foter1 fw-bold">ALL EVENTS</p>
+                    <div class="row">
+                        <div class="col-lg-4 col-md-6 mt-1 ml-3">
+                            <div class="card  jadwal-hover  h-100 w-100 rounded-2" style="width: 12rem; height: 10rem;">
+                                <div class="card-body">
+                                    <h5 class="card-title fw-bold text-left">TEND OMK</h5>
+                                    <p class="card-text fw-bold ">Senin - Sabtu : <br><span class="fw-light"> 05.30 & 06.05
+                                            WIB </span></p>
 
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-
         </div>
     </section>
 
-    <section class="sejarah ">
-        <div" class="container">
-            <div class="row mt-5 pt-5 ">
-                <div class="col">
-                    <img style="height: 400px; width:750px" class="img-fluid" src="../img/sejarah.jpg" alt="">
 
-                </div>
-                <div class="col-md-4">
-                    <h1 class="judulsejarah">Today With the Xaverian</h1>
-                    <p class="text-white pt-3 col-md-14" style="text-align: justify;">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deleniti, in quidem molestiae
-                        animi dolor cum magnam iure mollitia ad velit, iste laborum dolorum, delectus voluptatum
-                        reprehenderit laboriosam corrupti adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit. Laboriosam cupiditate eum fugit obcaecati quos quis libero adipisci magni assumenda fuga vero
-                        necessitatibus ducimus dolore dolorem, enim nesciunt consequuntur est id!</p>
-                </div>
-            </div>
-            </div>
-    </section>
-
-    <section class="galeri">
+    <section class="blog  mt-3 pt-3">
         <div class="container">
-            <h1 class="pt-5 text-center">GALERI</h1>
-            <p class="text-center pt-5  w-75 mx-auto">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deleniti, in quidem molestiae
-                animi dolor cum magnam iure mollitia ad velit, iste laborum dolorum, delectus voluptatum
-                reprehenderit laboriosam corrupti adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing
-                elit. Laboriosam cupiditate eum fugit obcaecati quos quis libero adipisci magni assumenda fuga vero
-                necessitatibus ducimus dolore dolorem, enim nesciunt consequuntur est id!
-            </p>
-            <div class="pt-5  align-items-center">
+            <hr>
+            <h1 class="judulmisa pt-2  fw-semibold">Berita Paroki Meliau</h1>
 
-                <img class="w-25 rounded float-start  mx-5 " src="../img/OMK.svg" alt="...">
-                <img class="w-25 rounded   mx-5" src="../img/Misdinar.svg" alt="...">
-                <img class="w-25 rounded float-end mx-4" src="../img/Pastoral.svg" alt="...">
+            <div class="row mt-1">
+                <div class="col-lg-4 col-md-6 mt-3 ml-3">
+                    <div class="card  h-100 w-100 rounded-0">
+                        <img src="img/berita.jpg" class="card-img-top rounded-0" style="object-fit: cover; height:200px"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-tittle fw-semibold">Perayaan Ekaristi Natal 2023<h5>
 
-                {{-- <h3>MISDINAR</h3> --}}
-            </div>
-
-            <div class="row mt-5 pt-5 ">
-                <div class="col">
-                    <img style="height: 400px; width:750px" class="img-fluid" src="../img/sejarah.jpg" alt="">
-
-                </div>
-                <div class="col-md-4">
-                    <h5 class="pt-5">Sejarah Gereja</h5>
-                    <p class="text-black pt-3 col-md-14" style="text-align: justify;">
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique deleniti, in quidem molestiae
-                        animi dolor cum magnam iure mollitia ad velit, iste laborum dolorum, delectus voluptatum
-                        reprehenderit laboriosam corrupti adipisci! Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.</p>
-                    <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-                        <button class="btn btn-dark me-md-2" type="button">READ MORE</button>
-
+                                    <p class="card-text pt-3">Perayaan Natal merupakan perayaan yang ditunggu-tunggu oleh
+                                        umat Katolik di mana pun mereka berada. Perayaan Natal juga dilaksanakan dengan
+                                        meriah</p>
+                        </div>
                     </div>
                 </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card  h-100 w-100 rounded-0">
+                        <img src="img/berita.jpg" class="card-img-top rounded-0" style="object-fit: cover; height:200px"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-tittle fw-semibold">Pesta Keluarga Kudus 2023
+                                <h5>
+
+                                    <p class="card-text pt-3">Keluarga Katolik adalah tempat pertama untuk mendalami iman.
+                                        Pada Pesta Keluarga Kudus kemarin Minggu (31/12/2023), Gereja St.Fransisus Xaverius
+                                    </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mt-3">
+                    <div class="card  h-100 w-100 rounded-0">
+                        <img src="img/berita.jpg" class="card-img-top rounded-0" style="object-fit: cover; height:200px"
+                            alt="...">
+                        <div class="card-body">
+                            <h5 class="card-tittle fw-semibold">Perayaan Ekaristi Malam Natal 2023
+                                <h5>
+
+                                    <p class="card-text pt-3">Perayaan Natal tahun ini dirayakan dengan penuh sukacita dan
+                                        lebih ramai daripada tahun sebelumnya. Tahun kemarin, jumlah umat dalam Perayaan
+                                        Natal.</p>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="text-center pt-5">
+                    <button type="button" class="btn btn-outline-dark align-content-center rounded-0 btn-lg">All
+                        Blog</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="galeri mt-3">
+        <div class="container">
+            <hr>
+            <h1 class="judulmisa fw-semibold">Explore Galeri Paroki</h1>
+
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-3">
+                <div class="col">
+                    <a href="img/berita.jpg" data-lightbox="gallery" data-title="OMK Image" class="rounded-0 h-100 w-100">
+                        <img src="img/berita.jpg" alt="OMK Image" class="rounded-0 img-fluid">
+
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="img/berita.jpg" data-lightbox="gallery" data-title="OMK Image" class="rounded-0 h-100 w-100">
+                        <img src="img/berita.jpg" alt="OMK Image" class="rounded-0 img-fluid">
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="img/berita.jpg" data-lightbox="gallery" data-title="OMK Image"
+                        class="rounded-0 h-100 w-100">
+                        <img src="img/berita.jpg" alt="OMK Image" class="rounded-0 img-fluid">
+                    </a>
+                </div>
+                <!-- Add more images as needed -->
+            </div>
+
+
+            <div class="text-center pt-5">
+                <button type="button" class="btn btn-outline-dark align-content-center rounded-0 btn-lg">All
+                    Gallery</button>
             </div>
         </div>
     </section>

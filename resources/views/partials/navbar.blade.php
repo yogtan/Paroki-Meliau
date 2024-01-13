@@ -1,7 +1,7 @@
-<nav class="navbar navbar-expand-lg fixed-top bg-transparent navbar-scrolled">
+<nav class="navbar navbar-expand-lg fixed-top  navbar-scrolled">
     <div class="container">
 
-        <a class="navbar-brand fs-4" href="#"><img src="img/logofix.png" width="80px" alt="logoParoki"> </a>
+        <a class="navbar-brand fs-4" href="#"><img id="navbar-logo"width="80px" alt="logoParoki"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -30,7 +30,7 @@
                             aria-expanded="false">
                             Tentang Gereja
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
+                        <ul class="dropdown-menu dropdown-menu-white">
                             <li><a class="dropdown-item" href="/sejarah">Sejarah Gereja</a></li>
                             <li><a class="dropdown-item" href="#">Pastor Paroki</a></li>
                             <li><a class="dropdown-item" href="#">Dewan Paroki</a></li>
@@ -42,7 +42,7 @@
                             aria-expanded="false">
                             Sekretariat
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
+                        <ul class="dropdown-menu dropdown-menu-whitek">
                             <li><a class="dropdown-item" href="#">Formulir</a></li>
 
                         </ul>
@@ -53,7 +53,7 @@
                             aria-expanded="false">
                             Blog & berita
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-dark">
+                        <ul class="dropdown-menu dropdown-menu-white">
                             <li><a class="dropdown-item" href="#">Lingkungan Gereja</a></li>
                             <li><a class="dropdown-item" href="#">Orang Muda Katolik</a></li>
                             <li><a class="dropdown-item" href="#">Puta & Putri Altar</a></li>
