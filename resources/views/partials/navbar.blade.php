@@ -1,7 +1,7 @@
 <nav class="navbar navbar-expand-lg fixed-top  navbar-scrolled">
     <div class="container">
 
-        <a class="navbar-brand fs-4" href="#"><img id="navbar-logo"width="80px" alt="logoParoki"> </a>
+        <a class="navbar-brand fs-4 " href="#"><img id="navbar-logo"width="200px" alt="logoParoki"> </a>
         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
@@ -31,8 +31,8 @@
                             Tentang Gereja
                         </a>
                         <ul class="dropdown-menu dropdown-menu-white">
-                            <li><a class="dropdown-item" href="/sejarah">Sejarah Gereja</a></li>
-                            <li><a class="dropdown-item" href="#">Pastor Paroki</a></li>
+                            <li><a class="dropdown-item" href="/sejarah">Sejarah</a></li>
+                            <li><a class="dropdown-item" href="/romo">Romo</a></li>
                             <li><a class="dropdown-item" href="#">Dewan Paroki</a></li>
                         </ul>
                     </li>
@@ -51,12 +51,12 @@
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            Blog & berita
+                            Informasi
                         </a>
                         <ul class="dropdown-menu dropdown-menu-white">
-                            <li><a class="dropdown-item" href="#">Lingkungan Gereja</a></li>
-                            <li><a class="dropdown-item" href="#">Orang Muda Katolik</a></li>
-                            <li><a class="dropdown-item" href="#">Puta & Putri Altar</a></li>
+                            <li><a class="dropdown-item" href="/blog">Blog & Berita</a></li>
+                            <li><a class="dropdown-item" href="/donasi">Donasi</a></li>
+                            <li><a class="dropdown-item" href="/kontak">Kontak</a></li>
 
                         </ul>
                     </li>

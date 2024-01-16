@@ -1,16 +1,15 @@
 
-.heroSejarah{
+.hero-romo{
     display: flex;
     min-height: 40vh;
     position: relative;
-    background-image: url(../img/Sejarah.jpg);
+    background-image: url(/img/hero2.png);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(9, 15, 17, 0.6);
 }
-
-.heroSejarah::after{
+.hero-romo::after{
     content: '';
   
     width: 100%;
@@ -22,12 +21,12 @@
     background-color: rgba(9, 15, 17, 0.6);
 }
 
-.heroSejarah .container {
+.hero-romo .container {
     position: relative;
     z-index: 1;
 }
 
-.blogSejarah{
+.blog-romo{
     font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     text-align: justify;

@@ -41,6 +41,8 @@
 
     <link rel="stylesheet" href="../css/style.css">
     <link rel="stylesheet" href="../css/sejarah.css">
+    <link rel="stylesheet" href="../css/romo.css">
+    <link rel="stylesheet" href="../css/informasi.css">
 </head>
 
 <body>

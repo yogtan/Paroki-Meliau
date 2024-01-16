@@ -6,8 +6,8 @@
         <div class="container text-center">
             <div class="tes ">
 
-                <p class="gereja-text text-white">Paroki St. Fransiskus Xaverius Meliau</p>
-                <p class="gereja-text2">A House of Prayer For All People</h3>
+                <p class="gereja-text text-white">ST. FRANSISKUS XAVERIUS MELIAU</p>
+                <p class="gereja-text2">A HOUSE OF PRAYER PEOPLE</h3>
 
 
 
@@ -167,5 +167,17 @@
                     Gallery</button>
             </div>
         </div>
+    </section>
+
+    <section class="map ">
+        <hr>
+        
+            <div class="map-responsive ">
+                <iframe class="mt-3"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.8086844659533!2d110.28603387487865!3d-0.1259234998728336!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e0287cc01e28849%3A0xcbdbee312bbd5233!2sGereja%20Katolik%20St.%20Fransiskus%20Xaverius!5e0!3m2!1sid!2sid!4v1691209947265!5m2!1sid!2sid"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" ></iframe>
+
+            </div>
+    
     </section>
 @endsection
