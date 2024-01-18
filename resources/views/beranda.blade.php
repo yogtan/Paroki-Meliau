@@ -80,7 +80,7 @@
     <section class="blog  mt-3 pt-3">
         <div class="container">
             <hr>
-            <h1 class="judulmisa pt-2  fw-semibold">Berita Paroki Meliau</h1>
+            <h1 class="judulmisa fw-bold">BLOG &<span class="fw-light"> BERITA</span></h1>
 
             <div class="row mt-1">
                 <div class="col-lg-4 col-md-6 mt-3 ml-3">
@@ -138,7 +138,7 @@
     <section class="galeri mt-3">
         <div class="container">
             <hr>
-            <h1 class="judulmisa fw-semibold">Explore Galeri Paroki</h1>
+            <h1 class="judulmisa fw-bold">EXPLORE <span class="fw-light">GALERI</span></h1>
 
             <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-3">
                 <div class="col">

@@ -17,19 +17,19 @@
                 <div class="col-lg-6 text-center">
 
                     <img src="img/1.png" alt="OMK Image" class="rounded-0 img-fluid border border ">
-                    <div class="text-center pt-3">
-                        <p>Rm. Yogtan SVD</p>
-                        <p>Pastor Kepala Paroki</p>
+                    <div class="judulmisa text-center pt-3">
+                        <p class="fw-bold">Rm. Johanes Yogtan, SVD <br><span class="fw-normal">Pastor Kepala Paroki</span></p>
+                        
 
                     </div>
                 </div>
                 <div class="col-lg-6 text-center">
 
                     <img src="img/2.png" alt="OMK Image" class="rounded-0 img-fluid border border ">
-                    <div class="text-center pt-3">
+                    <div class="judulmisa text-center pt-3">
 
-                        <p>Rm. Yogtan SVD</p>
-                        <p>Pastor Kepala Paroki</p>
+                        <p class="fw-bold">Rm. Johanes Yogtan, SVD <br><span class="fw-normal">Pastor Kepala Paroki</span></p>
+                        
                     </div>
                 </div>
 

@@ -19,6 +19,12 @@ body {
 
 }
 
+.sidebar .offcanvas-body .nav-item{
+
+    line-height: 2;
+   
+}
+
 .navbar-scrolled {
     background-color: #F5F5F5;
     transition: all 0.2s;
@@ -69,11 +75,15 @@ body {
 }
 
 .navbar .nav-item .nav-link:hover {
-    color: red;
+    color: grey;
+}
+
+.navbar .nav-item dropdown{
+    
+    margin-top: 50px;
 }
 
 .dropdown:hover .dropdown-menu {
-    margin-top: 0px;
     margin-left: 15px;
     display: block;
 }
@@ -173,8 +183,7 @@ body {
 
 .judulmisa {
     font-family: 'Roboto', sans-serif;
-    font-size: 30px;
-    font-weight: 700;
+  
 
 }
 

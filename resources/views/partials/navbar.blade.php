@@ -11,6 +11,7 @@
         
         <div class="sidebar offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
             {{-- sidebar header --}}
+            
             <div class="offcanvas-header border-bottom">
                 
                 <a class="navbar-brand fs-4" href="#"><img src="img/logofix.png" width="80px" alt="logoParoki"> </a>
@@ -24,16 +25,16 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="/">Beranda</a>
                     </li>
-
+                    
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
                             Tentang Gereja
                         </a>
-                        <ul class="dropdown-menu dropdown-menu-white">
+                        <ul class="dropdown-menu dropdown-menu-white ">
                             <li><a class="dropdown-item" href="/sejarah">Sejarah</a></li>
                             <li><a class="dropdown-item" href="/romo">Romo</a></li>
-                            <li><a class="dropdown-item" href="#">Dewan Paroki</a></li>
+                            
                         </ul>
                     </li>
 
