@@ -1,70 +1,45 @@
-<nav class="navbar navbar-expand-lg fixed-top  navbar-scrolled">
+<nav class="navbar navbar-expand-lg fixed-top bg-transparent" id="navbar">
     <div class="container">
-
-        <a class="navbar-brand fs-4 " href="#"><img id="navbar-logo"width="200px" alt="logoParoki"> </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar" aria-label="Toggle navigation">
+        <a class="navbar-brand" href="../admin/dashboard"><img src="../img/logo.svg" id="navbar-logo" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
+        <div class="collapse navbar-collapse" id="navbarScroll">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                <li class="nav-item">
+                    <a class="nav-link active mx-4" aria-current="page" href="/">HOME</a>
+                </li>
 
-        {{-- siodebearrr --}}
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        ABOUT </a>
+                    <ul class="dropdown-menu dropdown-menu-white ">
+                        <li><a class="dropdown-item" href="/sejarah">Sejarah Gereja</a></li>
+                        <li><a class="dropdown-item" href="/romo">Romo</a></li>
+                        <li><a class="dropdown-item" href="/dewan-paroki">Dewan Paroki</a></li>
+                        <li><a class="dropdown-item" href="/kategorial">Kategorial</a></li>
+                        <li><a class="dropdown-item" href="/stasi-lingkungan">Stasi & Lingkungan</a></li>
 
-        
-        <div class="sidebar offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
-            {{-- sidebar header --}}
-            
-            <div class="offcanvas-header border-bottom">
-                
-                <a class="navbar-brand fs-4" href="#"><img src="img/logofix.png" width="80px" alt="logoParoki"> </a>
-                
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            
-            
-            <div class="offcanvas-body">
-                <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="/">Beranda</a>
-                    </li>
-                    
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Tentang Gereja
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-white ">
-                            <li><a class="dropdown-item" href="/sejarah">Sejarah</a></li>
-                            <li><a class="dropdown-item" href="/romo">Romo</a></li>
-                            
-                        </ul>
-                    </li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link active mx-4" aria-current="page" href="/sekretariat">SEKRETARIAT</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        INFORMATION
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-white">
+                        <li><a class="dropdown-item" href="/berita">Blog & Berita</a></li>
+                        <li><a class="dropdown-item" href="/donasi">Donasi</a></li>
+                        <li><a class="dropdown-item" href="/kontak">Kontak</a></li>
 
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Sekretariat
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-whitek">
-                            <li><a class="dropdown-item" href="#">Formulir</a></li>
-
-                        </ul>
-                    </li>
-
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                            aria-expanded="false">
-                            Informasi
-                        </a>
-                        <ul class="dropdown-menu dropdown-menu-white">
-                            <li><a class="dropdown-item" href="/blog">Blog & Berita</a></li>
-                            <li><a class="dropdown-item" href="/donasi">Donasi</a></li>
-                            <li><a class="dropdown-item" href="/kontak">Kontak</a></li>
-
-                        </ul>
-                    </li>
-
-                </ul>
-
-            </div>
+                    </ul>
+                </li>
+            </ul>
         </div>
     </div>
 </nav>

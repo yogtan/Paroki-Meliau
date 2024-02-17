@@ -4,422 +4,69 @@
 }
 
 body {
-    font-family: 'Source Serif 4', serif;
+    font-family: "Montserrat", sans-serif;
     background-color: #FFFFFFFA;
 }
 
-/* Navbarrr */
-
-
 .navbar {
-    padding: 20px;
-    transition: all 0.0s;
-    font-family: 'Roboto', sans-serif;
-
-
-}
-
-.sidebar .offcanvas-body .nav-item{
-
-    line-height: 2;
-   
-}
-
-.navbar-scrolled {
-    background-color: #F5F5F5;
-    transition: all 0.2s;
-    color: black;
-    padding: 10px;
-    
-}
-
-
-
-.navbar-scrolled img {
-    background-image: url(img/BackgroundImage.jpg);
-}
-
-
-.navbar-scrolled img {
-    transition: all 0.5s;
-    width: 180px;
-    margin-left: 5px;
+    padding: 8px;
 }
 
 .navbar .nav-item {
     margin: 0px;
     margin-top: 0px;
     padding: 0px;
-
-    /* background-color: white; */
 }
-
-.navbar-brand {}
 
 .navbar .nav-item .nav-link {
-    font-weight: 400;
-    font-size: 18px;
-    margin: 0px 12px;
-    padding: 0px;
+    font-weight: 500;
+    font-size: 14px;
     color: white;
-    /* Initial text color */
-    font-weight: 500;
-    font-size: 16px;
 }
 
-.navbar-scrolled .nav-item .nav-link {
-    color: black;
-    /* Scrolled text color for links */
-    font-weight: 500;
-    font-size: 16px;
+.navbar.transparent {
+    background-color: transparent !important;
+    transition: background-color 0.5s ease-in-out;
+}
+.navbar.white {
+    background-color: white !important;
+    transition: background-color 0.5s ease-in-out;
+}
+.navbar.white .nav-link {
+    color: black !important;
 }
 
-.navbar .nav-item .nav-link:hover {
-    color: grey;
-}
 
-.navbar .nav-item dropdown{
-    
-    margin-top: 50px;
-}
 
-.dropdown:hover .dropdown-menu {
-    margin-left: 15px;
-    display: block;
-}
 
-.dropdown .dropdown-menu {
-    display: none;
-
-}
-
-/* Heroooo */
-
-.hero {
+.home-hero {
     display: flex;
     background-position: center;
-    min-height: 100vh;
-    background-image: url(../img/HeroBackground.svg);
+    min-height: 70vh;
+    background-image: url(../img/hero-BG.svg);
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
 }
 
-.hero::after {
-    content: '';
-    /* background: linear-gradient (180deg, rgba(17, 28, 32, 0.00) 0%, #111C20 94.52%); */
-    /* background-image: url(../img/HeroBackground.jpg); */
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    bottom: 0px;
-    left: 0px;
-    z-index: 0;
-    /* Mengatur z-index menjadi -1 untuk membuat pseudo-elemen berada di bawah teks */
-    background-color: rgba(9, 15, 17, 0.6);
-}
-
-.hero .container {
-    position: relative;
-    z-index: 1;
-}
-
-
-.social-media {
-    /* height: 700px; */
-    /* min-height: 100%; */
-    max-height: 100%;
-    color: #111C20;
-    font-family: 'Roboto', sans-serif;
-
-}
-
-@media (max-width: 767px) {
-
-    /* Gaya yang hanya berlaku ketika lebar layar kurang dari atau sama dengan 767px (resolusi ponsel) */
-    .col-lg-6 {
-        margin-bottom: 20px;
-        /* Menambahkan margin bawah pada kolom-kiri dan kolom-kanan */
-    }
-
-}
-
-.card-body {
-    padding: 1.25rem;
-}
-
-.card-title {
-    font-size: 1.2rem;
-    margin-bottom: 0.5rem;
-}
-
-.card-text {
-    font-size: 0.9rem;
-    color: #555;
-}
-
-/* Custom CSS for card hover effect */
-/* Custom CSS for card hover effect */
-.jadwal-hover {
-    color: #111C20;
-    transition: filter 0.3s ease-in-out;
-
-}
-
-
-
-.jadwal-hover:hover {
-    filter: brightness(80%);
-}
-
-
-
-/* Blog */
-.blog {
-    max-height: 100%;
-
-}
-
-.judulmisa {
-    font-family: 'Roboto', sans-serif;
-  
-
-}
-
-.sejarah {
-    min-height: 100vh;
-    background-color: #111C20;
-    display: flex;
-    position: relative;
-}
-
-.judulsejarah {
-    background: linear-gradient(90deg, #FFF 0%, #FF6A3D 92.19%);
-    background-clip: text;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    font-size: 32px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
-}
-
-.galeri {
-    max-height: 100%;
-    display: flex;
-    position: relative;
-}
-
-.footer {
-    min-height: 100%;
-   
-   background-color: red;
-}
-
-
-.judulfooter1 {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 48px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 30px;
-    /* 62.5% */
-}
-
-.judulfooter2 {
-    color: #FFF;
-    font-family: Poppins;
-    font-size: 64px;
-    font-style: normal;
-    font-weight: 700;
-    line-height: 30px;
-}
-
-.foter1 {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-
-     
-  
-    
-}
-.foter2 {
-    font-size: 16px;
-    font-family: 'Roboto', sans-serif;
-    /* text-align: right !important; */
-    
-}
-
-
-
-/* .prayer-text {
-    font-size: 68px;
-    font-weight: 800;
-    color: white;
-    margin: 1;
-    line-height: 1;
-    transition: font-size 0.5s ease;
-    Transisi ukuran teks
-}
-
-.for-all-text {
-    font-size: 68px;
-    font-weight: 800;
-    color: #FF6A3D;
-    margin: 1;
-    line-height: 1;
-    transition: font-size 0.5s ease;
-    Transisi ukuran teks
-} */
-
-.gereja-text {
-    margin-top: 50px;
-    font-family: 'Playfair Display', serif;
-    font-size: 68px;
-    font-weight: 600;
-    line-height: normal;
-    background: transparent;
-}
-
-.gereja-text2 {
-    font-size: 24px;
-    color: rgba(255, 255, 255, 0.573);
-    font-family: 'Roboto', sans-serif;
-    font-weight: inherit;
-    line-height: normal;
-}
-
-
-
-@media (max-width: 768px) {
-
-    /* Menyesuaikan gaya teks saat layar kecil */
-    .tes {
-        /* margin-bottom: 120px; */
-
-    }
-
-    .gereja-text {
-        font-size: 32px;
-
-    }
-
-    .gereja-text2 {
-        font-size: 18px;
-
-    }
-
-
-    .judulmisa {
-
-        font-size: 32px;
-        text-align: center;
-
-    }
-
-}
-
-.card {
-    width: 100%;
-    /* margin-left: 50px; */
-    /* width: 280px; */
-
-    /* max-width: 350px; */
-    /* background-color: red; */
-    /* border-radius: 12px; */
-    transition: box-shadow 0.3s ease-in-out;
-    /* Efek transisi untuk in dan out */
-    box-shadow: none;
-    /* Bayangan awal */
-    /* height:20rem; */
-    /* box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12), 0 4px 8px rgba(0, 0, 0, 0.06); */
-}
-
-.card:hover {
-    /* transform: scale(1.05); */
-    /* Bayangan saat hover */
-    /* transition: box-shadow 0.3s ease-in-out; */
-    /* Efek transisi saat hover */
-}
-
-.card-tittle {
-    font-family: 'Source Serif 4', serif;
-    font-size: 24px;
-    font-weight: 300;
-
-}
-
-.card-text {
-    font-family: 'Roboto', sans-serif;
-    /* margin-top:; */
-    font-weight: 300;
-    font-size: 14px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    /* Menambahkan elipsis (...) jika teks terlalu panjang */
-    /* white-space: nowrap; */
-    /* white-space: n; */
-    /* Mencegah teks untuk mematahkan baris */
-}
-
-@media (max-width: 1000px) {
-    .card {
-        max-width: 100%;
-        /* Maksimum lebar card untuk perangkat seluler */
-    }
-    .map-responsive {
-        overflow: hidden;
-        position: relative;
-        width: 100%;
-        height: 100%;
-        /* Rasio aspek 16:9 */
-    }
-    
-}
-
-
-/* Container card dengan position: sticky */
-.card-container {
-    position: sticky;
-    top: 50%;
-    /* Posisikan di tengah vertikal */
-    transform: translateY(-50%);
-    /* Sesuaikan agar tetap di tengah vertikal */
-}
-
-.gallery {}
-
-.map{
-   max-height: 100%;
-}
-.map-responsive {
-    overflow: hidden;
-    position: relative;
-    height: 400px;
-    /* height: 200px; */
-    
-    /* Rasio aspek 16:9 */
-}
-
-.map-responsive iframe {
-    
-    width: 100%;
-    height: 100%;
-}
-/* CSS untuk membuat iframe peta responsif */
-c
-
-/* Animasi */
-/* Animasi */
-.tes p {
+#schedule {
     opacity: 0;
-    transform: translateY(-30px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    transform: translateX(-50px); /* Geser elemen ke kiri di luar layar */
+    transition: opacity 1s ease, transform 1s ease; /* Animasi perubahan opacity dan transformasi */
 }
 
-.tes p.animate {
-    opacity: 1;
-    transform: translateY(0);
+#sekretariat {
+    opacity: 0;
+    transform: translateX(50px); /* Geser elemen ke kanan di luar layar */
+    transition: opacity 1s ease, transform 1s ease; /* Animasi perubahan opacity dan transformasi */
 }
+
+
+
+
+
+/* RESPONSIVVVV */
+/* FOOTER*/
+
+

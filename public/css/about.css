@@ -1,0 +1,22 @@
+.about {
+    display: flex;
+    background-position: center;
+    min-height: 40vh;
+    background-image: url(../img/hero-BG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+}
+
+
+.overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 2em;
+    color: white;
+}
+
+
