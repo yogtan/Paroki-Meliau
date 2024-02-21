@@ -72,6 +72,7 @@
         var subtitle = document.getElementById('subtitle');
         var schedule = document.getElementById('schedule');
         var sekretariat = document.getElementById('sekretariat');
+        var ayat = document.getElementById('ayat');
         var navbar = document.getElementById('navbar');
         var navbarLogo = document.getElementById('navbar-logo');
 
@@ -107,6 +108,12 @@
         setTimeout(function() {
             subtitle.style.transition = 'opacity 1s ease';
             subtitle.style.opacity = '1';
+            
+        }, 1500);
+        ayat.style.opacity = '0';
+        setTimeout(function() {
+            ayat.style.transition = 'opacity 1s ease';
+            ayat.style.opacity = '1';
 
         }, 1500);
 

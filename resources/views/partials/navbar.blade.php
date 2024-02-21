@@ -28,12 +28,15 @@
                     <a class="nav-link active mx-4" aria-current="page" href="/sekretariat">SEKRETARIAT</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle " href="#" role="button" data-bs-toggle="dropdown"
+                    <a class="nav-link active me-4" aria-current="page" href="/galeri">GALERI</a>
+                </li>
+                <li class="nav-item dropdown  ">
+                    <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"
                         aria-expanded="false">
                         INFORMATION
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-white">
-                        <li><a class="dropdown-item" href="/berita">Blog & Berita</a></li>
+                    <ul class="dropdown-menu  dropdown-menu-white ">
+                        <li><a class="dropdown-item " href="/berita">Blog & Berita</a></li>
                         <li><a class="dropdown-item" href="/donasi">Donasi</a></li>
                         <li><a class="dropdown-item" href="/kontak">Kontak</a></li>
 
@@ -43,3 +46,21 @@
         </div>
     </div>
 </nav>
+
+<script>
+    // Menampilkan dropdown menu saat mouse berada di atas item navbar yang memiliki dropdown
+    document.addEventListener("DOMContentLoaded", function () {
+        var dropdowns = document.querySelectorAll('.nav-item.dropdown');
+
+        dropdowns.forEach(function (dropdown) {
+            dropdown.addEventListener('mouseover', function () {
+                this.querySelector('.dropdown-menu').classList.add('show');
+            });
+
+            dropdown.addEventListener('mouseleave', function () {
+                this.querySelector('.dropdown-menu').classList.remove('show');
+            });
+        });
+    });
+
+</script>

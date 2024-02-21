@@ -36,6 +36,20 @@ body {
     color: black !important;
 }
 
+.list-right {
+    list-style-position: inside;
+}
+
+.symbol-right {
+    position: relative;
+}
+
+.symbol-right::before {
+    content: '\2023';
+    position: absolute;
+    left: -20px;
+}
+
 
 
 

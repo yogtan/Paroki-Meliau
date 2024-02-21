@@ -14,7 +14,7 @@
                         <div class="mb-3">
                             <label for="exampleFormControlInput1" class="form-label">Judul Berita</label>
                             <input name="title" type="text" class="form-control" id="exampleFormControlInput1"
-                                placeholder="Example : OMK Paroki Mengakan Tend OMK 2024">
+                                placeholder="Example : OMK Paroki Mengakan Tend OMK 2024" value="{{ $post->title }}">
                         </div>
                         <div class="mb-3">
                             <label for="formFileSm" class="form-label">Gambar</label>
@@ -29,7 +29,7 @@
 
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Content Berita</label>
-                            <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3">Teks Panjang</textarea>
+                            <textarea name="content" class="form-control" id="exampleFormControlTextarea1" rows="3" >{{ $post->content }}</textarea>
                         </div>
                     </div>
                     <button type="submit" class="btn btn-primary mb-3 mx-3">Submit</button>

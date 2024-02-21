@@ -3,42 +3,36 @@
 @section('adminContent')
     <section class="admin-posts mt-5">
         <div class="container">
-            <a href="{{ route('admin_show_create') }}" class="btn btn-primary mb-3">Tambah Postingan Berita</a>
+            <a href="{{ route('admin_showkat_create') }}" class="btn btn-primary mb-3">Tambah Kategorial</a>
             <div class="card">
                 <div class="card-body">
-                    <h5 class="card-title ">Daftar Postingan Berita</h5>
+                    <h5 class="card-title">Daftar Kategorial</h5>
                     <table class="table">
                         <thead>
                             <tr>
                                 <th scope="col">#</th>
-                                <th scope="col">Judul</th>
-                                <th scope="col">Image</th>
+                                <th scope="col">Nama Kategorial</th>
                                 <th scope="col">Deskripsi</th>
                                 <th scope="col">Aksi</th>
                             </tr>
                         </thead>
                         <tbody>
-                            @foreach ($posts as $index => $post)
+                            @foreach ($kategorials as $index => $kategorial)
                                 <tr>
                                     <th scope="row">{{ $index + 1 }}</th>
-                                    <td style="max-width: 100px;">{{ $post->title }}</td>
-                                    <td style="width: 100px;">
-
-                                        <img src="{{ url('storage/' . $post->image) }}" alt="Product Image" width="100px">
-
-                                    </td>
-                                    <td style="max-width: 200px;">{{ Str::limit($post->content, 150) }}</td>
-
+                                    <td style="max-width: 100px;">{{ $kategorial->name }}</td>
+                                    <td style="max-width: 500px;">{{ Str::limit($kategorial->description, 150) }}</td>
                                     <td>
-                                        <div class="d-flex">
-                                            <a href="{{ route('admin_show_update', $post) }}"
-                                                class="btn btn-warning btn-sm me-2">Edit </a>
-                                            <form action="{{ route('admin_destroy_posts', $post) }}" method="post">
+                                        <div class="d-flex mb-1">
+                                            <a href="{{ route('admin_showup_kategorial', $kategorial)  }}" class="btn btn-warning btn-sm me-2">Edit</a>
+                                            <form action="{{ route('admin_destroy_kategorial', $kategorial) }}" method="post">
                                                 @method('delete')
                                                 @csrf
                                                 <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
                                             </form>
                                         </div>
+                                        <a href="{{ route('admin_show_member', $kategorial) }}" class="btn btn-primary btn-sm">Lihat & Tambah Pengurus</a>
+
                                     </td>
                                 </tr>
                             @endforeach

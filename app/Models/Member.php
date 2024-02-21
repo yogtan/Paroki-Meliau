@@ -10,6 +10,7 @@ class Member extends Model
     use HasFactory;
 
     protected $fillable = [
+        'kategorials_id',
         'name',
         'jabatan',
         'image',
@@ -17,6 +18,6 @@ class Member extends Model
 
     public function kategorial()
     {
-        return $this->hasMany(Kategorial::class);
+        return $this->belongsToMany(Kategorial::class);
     }
 }

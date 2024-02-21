@@ -11,65 +11,41 @@
 
     <section class="sekretariat-konten mt-5">
         <div class="container">
-            <div class="baptis">
-                <span class="border border-light d-inline-block bg-light w-100">
-                    <div class="baptis-teks m-3">
-                        <h5 class="fw-bold">SAKRAMEN BAPTIS</h5>
-                    </div>
-                    <span class="border border-dark d-inline-block bg-light w-100">
-                        <div class="row m-4 ">
-                            <div class="col d-flex">
-                                <img src="../img/Docs.svg" alt="">
-                                <p class="align-self-center fw-bolder">Dokumen Baptis Anak</p>
+            <div class="dokumen mb-3">
+                @foreach ($categories as $category)
+                    @if ($category->documents->isNotEmpty())
+                        <span class="border border-light d-inline-block w-100">
+                            <div class="baptis-teks m-3">
+                                <h5 class="fw-bold">{{ strtoupper($category->name) }}</h5>
                             </div>
-                            <div class="col text-end align-self-center">
-                                <img src="../img/Export_pdf.svg" alt="">
-                            </div>
-                        </div>
-                    </span>
-                    <span class="border border-dark d-inline-block bg-light w-100 mt-3">
-                        <div class="row m-4 ">
-                            <div class="col d-flex">
-                                <img src="../img/Docs.svg" alt="">
-                                <p class="align-self-center fw-bolder">Dokumen Baptis Anak</p>
-                            </div>
-                            <div class="col text-end align-self-center">
-                                <img src="../img/Export_pdf.svg" alt="">
-                            </div>
-                        </div>
-                    </span>
-                </span>
+                            @foreach ($category->documents as $document)
+                                <span class="border border-dark d-inline-block bg-light w-100">
+                                    <div class="row m-4 ">
+                                        <div class="col d-flex">
+                                            <img src="../img/Docs.svg" alt="">
+                                            <a class="text-dark" href="{{ url('storage/document/' . $document->file) }}" target="_blank">
+                                                <p class="align-self-center fw-bolder mt-3">
+                                                    {{ strtoupper($document->title) }}
+                                                </p>
+                                            </a>
+                                        </div>
+                                        <div class="col text-end align-self-center">
+
+                                            <a href="{{ url('storage/document/' . $document->file) }}" download="{{ $document->file }}" class="btn btn-primary">
+                                                Download
+                                            </a>
+
+                                        </div>
+                                    </div>
+                                </span>
+                            @endforeach
+                        </span>
+                    @endif
+                @endforeach
+
             </div>
 
-            <div class="komuni mt-5 mb-5">
-                <span class="border border-light d-inline-block bg-light w-100">
-                    <div class="baptis-teks m-3">
-                        <h5 class="fw-bold">SAKRAMEN BAPTIS</h5>
-                    </div>
-                    <span class="border border-dark d-inline-block bg-light w-100">
-                        <div class="row m-4 ">
-                            <div class="col d-flex">
-                                <img src="../img/Docs.svg" alt="">
-                                <p class="align-self-center fw-bolder">Dokumen Baptis Anak</p>
-                            </div>
-                            <div class="col text-end align-self-center">
-                                <img src="../img/Export_pdf.svg" alt="">
-                            </div>
-                        </div>
-                    </span>
-                    <span class="border border-dark d-inline-block bg-light w-100 mt-3">
-                        <div class="row m-4 ">
-                            <div class="col d-flex">
-                                <img src="../img/Docs.svg" alt="">
-                                <p class="align-self-center fw-bolder">Dokumen Baptis Anak</p>
-                            </div>
-                            <div class="col text-end align-self-center">
-                                <img src="../img/Export_pdf.svg" alt="">
-                            </div>
-                        </div>
-                    </span>
-                </span>
-            </div>
+
         </div>
 
     </section>

@@ -12,89 +12,19 @@
 
     <section class="about-dewan-konten mt-5">
         <div class="container">
+            <div class="row justify-content-center">
+                @foreach ($dewans as $dewan)
+                    <div class="col-md-3 mb-3">
+                        <div class="image-struktur text-center">
+                            <img class="rounded-circle" src="{{ url('storage/' . $dewan->image) }}" width="200px" alt="">
+                            <div class="text-center mt-3">
+                                <h5 class="fw-bolder">{{ $dewan->name }}</h5>
+                                <p>{{ $dewan->jabatan }}</p>
 
-            <div class="row">
-                <div class="col-md-3 mb-3">
-                    <div class="image-struktur text-center">
-                        <img class="rounded-5" src="../img/Profile.svg" width="200px" alt="">
-                        <div class="text-center mt-3">
-                            <h5 class="fw-bolder">POPE FRANCIS</h5>
-                            <p>PASTOR PAROKI</p>
-
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="image-struktur text-center">
-                        <img class="rounded-5" src="../img/Profile.svg" width="200px" alt="">
-                        <div class="text-center mt-3">
-                            <h5 class="fw-bolder">POPE FRANCIS</h5>
-                            <p>PASTOR PAROKI</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="image-struktur text-center">
-                        <img class="rounded-5" src="../img/Profile.svg" width="200px" alt="">
-                        <div class="text-center mt-3">
-                            <h5 class="fw-bolder">POPE FRANCIS</h5>
-                            <p>PASTOR PAROKI</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="image-struktur text-center">
-                        <img class="rounded-5" src="../img/Profile.svg" width="200px" alt="">
-                        <div class="text-center mt-3">
-                            <h5 class="fw-bolder">POPE FRANCIS</h5>
-                            <p>PASTOR PAROKI</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="image-struktur text-center">
-                        <img class="rounded-5" src="../img/Profile.svg" width="200px" alt="">
-                        <div class="text-center mt-3">
-                            <h5 class="fw-bolder">POPE FRANCIS</h5>
-                            <p>PASTOR PAROKI</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="image-struktur text-center">
-                        <img class="rounded-5" src="../img/Profile.svg" width="200px" alt="">
-                        <div class="text-center mt-3">
-                            <h5 class="fw-bolder">POPE FRANCIS</h5>
-                            <p>PASTOR PAROKI</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="image-struktur text-center">
-                        <img class="rounded-5" src="../img/Profile.svg" width="200px" alt="">
-                        <div class="text-center mt-3">
-                            <h5 class="fw-bolder">POPE FRANCIS</h5>
-                            <p>PASTOR PAROKI</p>
-
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-3 mb-3">
-                    <div class="image-struktur text-center">
-                        <img class="rounded-5" src="../img/Profile.svg" width="200px" alt="">
-                        <div class="text-center mt-3">
-                            <h5 class="fw-bolder">POPE FRANCIS</h5>
-                            <p>PASTOR PAROKI</p>
-
-                        </div>
-                    </div>
-                </div>
-               
+                @endforeach
             </div>
         </div>
     </section>

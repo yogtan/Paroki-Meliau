@@ -16,7 +16,15 @@ class KategorialController extends Controller
      */
     public function index()
     {
-        //
+        $kategorials = Kategorial::all();
+        return view('about.kategorial', compact('kategorials'));
+    }
+
+    public function index_detail($id)
+    {
+        $kategorial = Kategorial::find($id);
+        $members = $kategorial->members;
+        return view('about.detail-kategorial', compact('kategorial', 'members'));
     }
 
     /**
@@ -29,6 +37,10 @@ class KategorialController extends Controller
         //
     }
 
+    public function show_create()
+    {
+        return view('admin.kategorial.add-kategorial');
+    }
     /**
      * Store a newly created resource in storage.
      *
@@ -39,7 +51,7 @@ class KategorialController extends Controller
     {
         $request->validate([
             'name' => 'required',
-            'description' => 'nullable|required',
+            'description' => 'required',
         ]);
 
         Kategorial::create([
@@ -47,7 +59,7 @@ class KategorialController extends Controller
             'description' => $request->description,
         ]);
 
-        return Redirect::back();
+        return Redirect::route('admin_show_kategorial');
     }
 
     /**
@@ -58,8 +70,14 @@ class KategorialController extends Controller
      */
     public function show(Kategorial $kategorial)
     {
-        //
     }
+
+    public function show_kategorial()
+    {
+        $kategorials = Kategorial::all();
+        return view('admin.kategorial.admin-kategorial', compact('kategorials'));
+    }
+
 
     /**
      * Show the form for editing the specified resource.
@@ -79,9 +97,23 @@ class KategorialController extends Controller
      * @param  \App\Models\Kategorial  $kategorial
      * @return \Illuminate\Http\Response
      */
-    public function update(UpdateKategorialRequest $request, Kategorial $kategorial)
+    public function update_kategorial(UpdateKategorialRequest $request, Kategorial $kategorial)
     {
-        //
+        $request->validate([
+            'name' => 'required',
+            'description' => 'nullable'
+        ]);
+
+        $kategorial->update([
+            'name' => $request->name,
+            'description' => $request->description,
+        ]);
+        return Redirect::route('admin_show_kategorial');
+    }
+
+    public function update_show(Kategorial $kategorial)
+    {
+        return view('admin.kategorial.edit-kategorial', compact('kategorial'));
     }
 
     /**
@@ -90,8 +122,9 @@ class KategorialController extends Controller
      * @param  \App\Models\Kategorial  $kategorial
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Kategorial $kategorial)
+    public function destroy_kategorial(Kategorial $kategorial)
     {
-        //
+        $kategorial->delete();
+        return Redirect::back();
     }
 }

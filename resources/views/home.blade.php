@@ -18,20 +18,43 @@
     <section class="home-schedule mt-5">
         <div class="container">
             <div class="row">
-                <div class="col-md-6 text-end mb-3" id="schedule">
-                    <h2 class="fw-bolder">LITURGICAL <br> SCHEDULE</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.Lorem ipsum dolor sit amet consectetur
-                        adipiscing elit Ut et.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.Lorem ipsum dolor
-                        sit amet consectetur adipiscing elit Ut et.</p>
+                <div class="col-md-4  mb-3" id="schedule">
+
+                    <div class="card w-100" style="width: 25rem;">
+                        <div class="card-body text-center">
+                            <h2 class="fw-bolder text-center">JADWAL LITURGI</h2>
+                            <hr>
+                            <h5>Misa Hari Minggu</h5>
+                            <p> 18.00 / 08.00 </p>
+                            <h5>Misa Harian</h5>
+                            <p>Senin - Jumat 7.00</p>
+                        
+                        </div>
+                    </div>
                 </div>
-                <div class="col-md-6" id="sekretariat">
-                    <h2 class="fw-bolder">SEKRETARIAT <br> SCHEDULE</h2>
-                    <p>Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.Lorem ipsum dolor sit amet consectetur
-                        adipiscing elit Ut et.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.Lorem ipsum dolor
-                        sit amet consectetur adipiscing elit Ut et.</p>
+                <div class="col-md-4 text-content-center" id="ayat">
+                    <div class="text-center">
+                        <h2 class="fw-bolder">ROMA 8:18</h2>
+                        <p>"Sebab aku yakin, bahwa penderitaan masa kini tidak ada artinya dibandingkan dengan kemuliaan
+                            yang akan dinyatakan kepada kita." </p>
+                    </div>
+
                 </div>
-            </div>
-        </div>
+                <div class="col-md-4" id="sekretariat">
+
+                    <div class="card w-100" style="width: 25rem;">
+                        <div class="card-body text-center">
+                            <h2 class="fw-bolder text-center">SEKRETARIAT</h2>
+                            <hr>
+                            <h5>Jam Kerja</h5>
+                            <p>Senin - Jumat, 09:00 WIB - 17:00 WIB</p>
+                            <h5>Kontak</h5>
+                            <p>Telepon: (123) 456-7890</p>
+                            
+                        </div>
+                    </div>
+
+                </div>
     </section>
 
     <section class="home-about mt-3 bg-dark ">
@@ -39,7 +62,7 @@
             <div class="row">
                 <h2 class="text-white mt-5 fw-bold">OUR CHURCH</h2>
                 <div class="col-md-6">
-                    <iframe class="mt-3 mb-3" style="width: 100%; height: 300px;"
+                    <iframe class="mt-3 mb-5" style="width: 100%; height: 300px;"
                         src="https://www.youtube.com/embed/MmhFmVhQtJg" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6">
@@ -83,9 +106,9 @@
         <div class="text-center col-12 mt-4">
             <a href="/berita" class="btn btn-dark">Selengkapnya</a>
         </div>
-        </div>
-        </div>
+
     </section>
+
 
 
     <section class="home-teks mt-5 ">
