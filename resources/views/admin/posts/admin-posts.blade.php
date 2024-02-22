@@ -33,11 +33,11 @@
                                         <div class="d-flex">
                                             <a href="{{ route('admin_show_update', $post) }}"
                                                 class="btn btn-warning btn-sm me-2">Edit </a>
-                                            <form action="{{ route('admin_destroy_posts', $post) }}" method="post">
-                                                @method('delete')
-                                                @csrf
-                                                <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
-                                            </form>
+                                                <form  action="{{ route('admin_destroy_posts', $post) }}" method="post">
+                                                    @method('delete')
+                                                    @csrf
+                                                    <button type="submit" class="btn btn-danger btn-sm" id="delete">Hapus</button>
+                                                </form>
                                         </div>
                                     </td>
                                 </tr>

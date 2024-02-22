@@ -59,10 +59,10 @@
 
                             {{-- @dd($documents) --}}
 
-                            @foreach ($categories as $index => $category)
+                            @foreach ($categories as $category)
                             @foreach ($category->documents as $index => $document)
                             <tr>
-                                <th scope="row">{{ $index + 1 }}</th>
+                                <th scope="row">{{ $loop->parent->index * $loop->count + $loop->index + 1 }}</th>
                                 <td style="max-width: 100px;">{{ $category->name }}</td>
                                         <td style="max-width: 100px;">{{ $document->title }}</td>
                                         <td style="max-width: 400px;">
@@ -83,7 +83,7 @@
                                                     method="post">
                                                     @method('delete')
                                                     @csrf
-                                                    <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                                                    <button type="submit" class="btn btn-danger btn-sm" id="delete">Hapus</button>
                                                 </form>
                                             </div>
                                         </td>

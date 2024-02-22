@@ -5,6 +5,9 @@ namespace App\Http\Controllers;
 use App\Models\Category;
 use App\Http\Requests\StoreCategoryRequest;
 use App\Http\Requests\UpdateCategoryRequest;
+use App\Models\Document;
+use App\Models\Kategorial;
+use App\Models\Post;
 
 class CategoryController extends Controller
 {
@@ -15,7 +18,12 @@ class CategoryController extends Controller
      */
     public function index()
     {
-        //
+        $totalpost = Post::count();
+        $totalkategorial = Kategorial::count();
+        $totaldokumen = Document::count();
+
+        // dd($totalpost);
+        return view('admin.admin-dashboard', compact('totalpost', 'totalkategorial', 'totaldokumen'));
     }
 
     /**

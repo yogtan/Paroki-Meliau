@@ -10,10 +10,10 @@
                     <div class="card text-white bg-primary mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Total Posts</h5>
-                            <p class="card-text">100</p>
+                            <p class="card-text">{{ $totalpost }}</p>
                         </div>
                         <div class="card-footer">
-                            <a class="card-text text-white" href="">View Details</a>
+                            <a class="card-text text-white" href="{{ route('admin_show_posts') }}">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -21,10 +21,10 @@
                     <div class="card text-white bg-success mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Total Kategorial</h5>
-                            <p class="card-text">50</p>
+                            <p class="card-text">{{ $totalkategorial }}</p>
                         </div>
                         <div class="card-footer">
-                            <a class="card-text text-white" href="">View Details</a>
+                            <a class="card-text text-white" href="{{ route('admin_show_kategorial') }}">View Details</a>
                         </div>
                     </div>
                 </div>
@@ -32,10 +32,10 @@
                     <div class="card text-white bg-danger mb-3">
                         <div class="card-body">
                             <h5 class="card-title">Total Dokumen</h5>
-                            <p class="card-text">25</p>
+                            <p class="card-text"> {{ $totaldokumen }}</p>
                         </div>
                         <div class="card-footer">
-                            <a class="card-text text-white" href="">View Details</a>
+                            <a class="card-text text-white" href="{{  route('admin_show_dok') }}">View Details</a>
                         </div>
                     </div>
                 </div>

@@ -28,7 +28,7 @@
                                             <form action="{{ route('admin_destroy_kategorial', $kategorial) }}" method="post">
                                                 @method('delete')
                                                 @csrf
-                                                <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                                                <button type="submit" class="btn btn-danger btn-sm" id="delete">Hapus</button>
                                             </form>
                                         </div>
                                         <a href="{{ route('admin_show_member', $kategorial) }}" class="btn btn-primary btn-sm">Lihat & Tambah Pengurus</a>

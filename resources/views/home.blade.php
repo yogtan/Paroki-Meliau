@@ -72,7 +72,7 @@
                         sit amet consectetur adipiscing elit Ut et. Lorem ipsum dolor sit amet consectetur adipiscing elit
                         Ut et.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.Lorem ipsum dolor sit amet
                         consectetur adipiscing elit Ut et.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-
+                        
                     <div class="btn-more mb-5">
                         <button type="button" class="btn btn-light">Selengkapnya...</button>
                     </div>
@@ -92,9 +92,10 @@
                                 <img src="{{ url('storage/' . $post->image) }}" class="card-img-top"
                                     style="object-fit: cover; height:200px" alt="...">
 
-                                <div class="card-body" style="height: 150px; overflow: hidden;">
+                                <div class="card-body" style="height: 160px; overflow: hidden;">
                                     <h5 class="card-title">{{ $post->title }}</h5>
-                                    <p class="card-text">{{ $post->content }}</p>
+                                    <p class="card-text">{{ Str::limit($post->content, 100)}}</p>
+
                                 </div>
                             </div>
                         </a>

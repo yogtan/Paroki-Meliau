@@ -86,7 +86,6 @@
     </script>
     -->
 
-
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.1.3/js/bootstrap.bundle.min.js"></script>
@@ -125,39 +124,25 @@
     });
 </script>
 
-
+{{-- Sidebarrr --}}
 <style>
-    /* Animasi untuk sidebar */
+
     .sidebar {
         transition: margin-left 0.5s;
     }
 
-    /* Menyembunyikan sidebar */
-
-
-    /* Menyembunyikan sidebar dengan animasi */
     .sidebar-hidden {
         margin-left: -280px;
     }
 
-    /* Membuat konten bergeser saat sidebar muncul */
-
-
-    /* Menyesuaikan margin konten ketika sidebar muncul */
     #content-wrapper,
     #adminContent {
         /* transition: margin-left 0.5s; */
         margin-left: 0;
     }
 
-    /* Menyesuaikan margin navbar dan container ketika sidebar muncul */
-
-    /* Media query untuk menentukan perilaku toggler */
     @media (max-width: 768px) {
-        /* .navbar-toggler {
-            display: none;
-        } */
-
+ 
     }
 </style>
 
@@ -174,7 +159,37 @@
     }
 </script>
 
+{{-- Alerttt --}}
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+<script type="text/javascript">
+    $(function() {
+        $(document).on('click', '#delete', function(e) {
+            e.preventDefault();
+            var form = $(this).closest("form");
 
+            Swal.fire({
+                title: "Are you sure?",
+                text: "You won't be able to revert this!",
+                icon: "warning",
+                showCancelButton: true,
+                confirmButtonColor: "#3085d6",
+                cancelButtonColor: "#d33",
+                confirmButtonText: "Yes, delete it!"
+            }).then((result) => {
+                if (result.isConfirmed) {
+                    Swal.fire({
+                        title: "Deleted!",
+                        text: "Your file has been deleted.",
+                        icon: "success"
+                    });
+                    form.submit();
+                }
+            });
+
+lor
+        });
+    });
+</script>
 
 
 </html>

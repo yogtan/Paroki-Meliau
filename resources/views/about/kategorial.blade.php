@@ -25,10 +25,10 @@
                     </div>
                     <div class="col-lg-8">
                         <h5 class="fw-bolder mt-1">{{ $kategorial->name }}</h5>
-                        <p>{{ Str::limit($kategorial->description, 300)}}</p>
+                        <p>{{ Str::limit($kategorial->description, 400)}}</p>
                         <div class="">
                             {{-- @dd($kategorial->id) --}}
-                            <a href="{{ route('show_detail_kategorial', $kategorial->id) }}" class="btn btn-dark mt-3">Selengkapnya</a>
+                            <a href="{{ route('show_detail_kategorial', $kategorial->id) }}" class="text-dark mt-3">Detail Kategorial...</a>
                         </div>
                     </div>
                     @endforeach

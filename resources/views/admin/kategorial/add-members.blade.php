@@ -69,7 +69,7 @@
                                             <form action="{{ route('admin_destroy_member', $member) }}" method="post">
                                                 @method('delete')
                                                 @csrf
-                                                <button type="submit" class="btn btn-danger btn-sm">Hapus</button>
+                                                <button type="submit" class="btn btn-danger btn-sm" id="delete">Hapus</button>
                                             </form>
                                         </div>
                                     </td>

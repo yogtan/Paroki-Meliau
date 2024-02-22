@@ -16,12 +16,10 @@
                         aria-expanded="false">
                         ABOUT </a>
                     <ul class="dropdown-menu dropdown-menu-white ">
-                        <li><a class="dropdown-item" href="/sejarah">Sejarah Gereja</a></li>
-                        <li><a class="dropdown-item" href="/romo">Romo</a></li>
+                        <li><a class="dropdown-item" href="/sejarah">Sejarah Paroki</a></li>
+                        <li><a class="dropdown-item" href="/romo">Romo Paroki</a></li>
                         <li><a class="dropdown-item" href="/dewan-paroki">Dewan Paroki</a></li>
                         <li><a class="dropdown-item" href="/kategorial">Kategorial</a></li>
-                        <li><a class="dropdown-item" href="/stasi-lingkungan">Stasi & Lingkungan</a></li>
-
                     </ul>
                 </li>
                 <li class="nav-item dropdown">

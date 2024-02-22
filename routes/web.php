@@ -24,6 +24,8 @@ use Illuminate\Support\Facades\Auth;
 |
 */
 // Admin POST
+
+Route::get('/admin/dashboard', [CategoryController::class, 'index'])->name('admin_dashboard');
 Route::get('/admin/posts/create', [PostController::class, 'show_create'])->name('admin_show_create');
 Route::post('/admin/posts/create', [PostController::class, 'store'])->name('admin_create_posts');
 
@@ -91,9 +93,9 @@ Route::get('/kontak', function () {
 Route::get('/tes', function () {
     return view('admin.auth.login1');
 });
-Route::get('/admin/dashboard', function () {
-    return view('admin.admin-dashboard ');
-});
+// Route::get('/admin/dashboard', function () {
+//     return view('admin.admin-dashboard ');
+// });
 
 // Route::get('/admin/kategorial', function () {
 //     return view('admin.admin-kategorial');

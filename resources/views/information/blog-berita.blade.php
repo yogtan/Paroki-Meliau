@@ -16,12 +16,12 @@
                 @foreach ($posts as $post)
                     <div class="col-lg-4 col-md-6 mt-3">
                         <a href="{{ route('detail_berita', $post->id) }}" class="text-decoration-none text-dark">
-                        <div class="card w-100" style="height: 350px">
+                        <div class="card w-100" style="height: 360px">
                             <img src="{{ url('storage/' . $post->image) }}" class="card-img-top"
                                 style="object-fit: cover; height:200px" alt="...">
                             <div class="card-body" style="height: 150px; overflow: hidden;">
                                 <h5 class="card-title">{{ $post->title }}</h5>
-                                <p class="card-text">{{ $post->content }}</p>
+                                <p class="card-text">{{ Str::limit($post->content, 100)}}</p>
                             </div>
                         </div>
                     </a>
