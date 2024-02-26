@@ -35,6 +35,14 @@
                 Dokumen   
                 </a>
             </li>
+            <li>
+                <a href="/admin/galeri" class="nav-link text-white {{ Request::is('admin/galeri*') ? 'active' : '' }}" aria-current="page">
+                    {{-- <svg class="bi pe-none me-2" width="16" height="16"> --}}
+                        <use xlink:href="#grid" />
+                    </svg>
+                Galeri   
+                </a>
+            </li>
 
 
         </ul>

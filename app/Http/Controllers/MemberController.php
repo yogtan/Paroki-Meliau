@@ -49,7 +49,7 @@ class MemberController extends Controller
 
         // dd($request->file('image'));
         $file = $request->file('image');
-
+        // dd('image');
         $path = time() . '_' . $request->title . '.' . $file->getClientOriginalExtension();
 
         Storage::disk('local')->put('public/' . $path, file_get_contents($file));
