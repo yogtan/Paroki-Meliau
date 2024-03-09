@@ -16,6 +16,13 @@ class Admin
      * @param  \Closure(\Illuminate\Http\Request): (\Illuminate\Http\Response|\Illuminate\Http\RedirectResponse)  $next
      * @return \Illuminate\Http\Response|\Illuminate\Http\RedirectResponse
      */
+
+    //  protected function redirectTo($request)
+    //  {
+    //      if (! $request->expectsJson()) {
+    //          return route('login');
+    //      }
+    //  }
     public function handle(Request $request, Closure $next)
     {
         

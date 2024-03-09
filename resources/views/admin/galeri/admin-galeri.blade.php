@@ -12,6 +12,7 @@
                             <tr>
                                 <th scope="col">#</th>
                                 <th scope="col">Nama Album</th>
+                                <th scope="col">Gambar Album</th>
                                 <th scope="col">Deskripsi</th>
                                 <th scope="col">Aksi</th>
                             </tr>
@@ -21,6 +22,11 @@
                                 <tr>
                                     <th scope="row">{{ $index + 1 }}</th>
                                     <td style="max-width: 100px;">{{ $album->name }}</td>
+                                    <td style="width: 100px;">
+
+                                        <img src="{{ url('storage/' . $album->image) }}" alt="Product Image" width="100px">
+
+                                    </td>
                                     <td style="max-width: 500px;">{{ Str::limit($album->description, 150) }}</td>
                                     <td>
                                         <div class="d-flex mb-1">

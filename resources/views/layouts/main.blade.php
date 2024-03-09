@@ -26,6 +26,7 @@
     <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/information.css">
     <link rel="stylesheet" href="../css/sekretariat.css">
+    <link rel="stylesheet" href="../css/galeri.css">
 
     <title>Xaverian Meliau</title>
 </head>

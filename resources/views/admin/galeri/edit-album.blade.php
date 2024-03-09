@@ -18,7 +18,17 @@
                             placeholder="OMK (Orang Muda Katolik)" value="{{ $album->name }}">
                             
                         </div>
-                        
+                        <div class="mb-3">
+                            <label for="formFileSm" class="form-label">Gambar</label>
+                            <input name="image" class="form-control form-control-sm" id="formFileSm" type="file"
+                            onchange="previewImage(event)">
+                            @if ($album->image)
+                                <img style="max-width: 500px" class="img-fluid mx-auto d-block mt-3 rounded" src="{{ url('storage/' . $post->image) }}" alt="Product Image">
+                            @endif
+                            <img class="img-fluid mx-auto d-block mt-3 rounded" id="preview" src="#"
+                                alt="Preview Image" style="max-width: 500px">
+                        </div>
+
                         <div class="mb-3">
                             <label for="exampleFormControlTextarea1" class="form-label">Deskripsi</label>
                             <textarea name="description" class="form-control" id="exampleFormControlTextarea1" rows="3">{!! nl2br($album->description) !!}</textarea>

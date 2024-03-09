@@ -28,7 +28,7 @@
                             <p> 18.00 / 08.00 </p>
                             <h5>Misa Harian</h5>
                             <p>Senin - Jumat 7.00</p>
-                        
+
                         </div>
                     </div>
                 </div>
@@ -50,7 +50,7 @@
                             <p>Senin - Jumat, 09:00 WIB - 17:00 WIB</p>
                             <h5>Kontak</h5>
                             <p>Telepon: (123) 456-7890</p>
-                            
+
                         </div>
                     </div>
 
@@ -66,15 +66,16 @@
                         src="https://www.youtube.com/embed/MmhFmVhQtJg" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="col-md-6">
-                    <p style="text-align: justify" class="text-white mt-3 ">Lorem ipsum dolor sit amet consectetur
-                        adipiscing elit Ut et.Lorem ipsum dolor sit amet consectetur
-                        adipiscing elit Ut et.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.Lorem ipsum dolor
-                        sit amet consectetur adipiscing elit Ut et. Lorem ipsum dolor sit amet consectetur adipiscing elit
-                        Ut et.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.Lorem ipsum dolor sit amet
-                        consectetur adipiscing elit Ut et.Lorem ipsum dolor sit amet consectetur adipiscing elit Ut et.</p>
-                        
+                    <p style="text-align: justify" class="text-white mt-3 ">Sejarah berdirinya Gereja St. Fransiskus
+                        Xaverius di Paroki Meliau mencerminkan perjuangan dan semangat umat Katolik dalam membangun tempat
+                        ibadah yang layak di tengah keterbatasan dan tantangan. Pada awalnya, komunitas Katolik di Kecamatan
+                        Meliau hanya terdiri dari sejumlah kecil umat, khususnya di Pusat Paroki. Dalam hal ini, tokoh-tokoh
+                        dari keluarga Katolik menjadi pionir dan perintis dalam membentuk cikal bakal Paroki Meliau.</p>
+
                     <div class="btn-more mb-5">
-                        <button type="button" class="btn btn-light">Selengkapnya...</button>
+                        <a href="/sejarah">
+                            <button type="button" class="btn btn-light">Selengkapnya...</button>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -94,7 +95,7 @@
 
                                 <div class="card-body" style="height: 160px; overflow: hidden;">
                                     <h5 class="card-title">{{ $post->title }}</h5>
-                                    <p class="card-text">{{ Str::limit($post->content, 100)}}</p>
+                                    <p class="card-text">{{ Str::limit($post->content, 100) }}</p>
 
                                 </div>
                             </div>

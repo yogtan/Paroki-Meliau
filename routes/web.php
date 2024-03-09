@@ -78,30 +78,36 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/{album}/foto', [GaleryController::class, 'show_create'])->name('admin_show_galeri');
     Route::post('/admin/{album}/foto', [GaleryController::class, 'store'])->name('admin_create_galeri');
     Route::delete('/admin/{foto}/foto', [GaleryController::class, 'destroy'])->name('admin_destroy_foto');
+    Route::post('/logout', [Auth::class, 'logout'])->name('logout');
 });
 // USERrrr
 
 
 
 Route::middleware(['auth'])->group(function () {
-    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
     Route::get('/ ', [PostController::class, 'index'])->name('show_posts');
     Route::get('/romo', [MemberController::class, 'show_romo'])->name('show_romo');
     Route::get('/sekretariat', [DocumentController::class, 'index'])->name('show_dokumen');
     Route::get('/dewan-paroki', [MemberController::class, 'show_dpp'])->name('show_dpp');
     Route::get('/berita ', [PostController::class, 'index'])->name('show_berita');
+    Route::get('/galeri ', [GalleryCategoryController::class, 'index'])->name('show_galeri');
+    Route::get('/galeri/{id} ', [GaleryController::class, 'index_detail'])->name('detail_galeri');
     Route::get('/berita/{id} ', [PostController::class, 'index_detail'])->name('detail_berita');
     Route::get('/kategorial', [KategorialController::class, 'index'])->name('show_kategorial');
     Route::get('/kategorial/{id}', [KategorialController::class, 'index_detail'])->name('show_detail_kategorial');
     Route::get('/kontak', function () {
         return view('information.kontak');
     });
+    Route::get('/donasi', function () {
+        return view('information.donasi');
+    });
+    Route::get('/sejarah', function () {
+        return view('about.sejarah');
+    });
 });
 // Route::get('/', function () {
 //     return view('home');
-// });
-// Route::get('/sejarah', function () {
-//     return view('about.sejarah');
 // });
 // Route::get('/romo', function () {
 //     return view('about.romo');
@@ -113,9 +119,6 @@ Route::middleware(['auth'])->group(function () {
 
 // Route::get('/blog', function () {
 //     return view('information.blog-berita');
-// });
-// Route::get('/donasi', function () {
-//     return view('information.donasi');
 // });
 // Route::get('/tes', function () {
 //     return view('admin.auth.login1');
@@ -130,5 +133,3 @@ Route::middleware(['auth'])->group(function () {
 // Route::get('/admin/dokumen', function () {
 //     return view('admin.admin-dokumen');
 // });
-
-

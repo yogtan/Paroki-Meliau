@@ -1,0 +1,9 @@
+.galeri {
+    display: flex;
+    background-position: center;
+    min-height: 40vh;
+    background-image: url(../img/hero-BG.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}

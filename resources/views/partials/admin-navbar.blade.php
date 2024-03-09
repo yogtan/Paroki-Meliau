@@ -12,15 +12,23 @@
         </div>
         <!-- Dropdown ditempatkan di sebelah kanan menggunakan ml-auto -->
         <div class="dropdown mx-3">
-            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+            <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
+                data-bs-toggle="dropdown" aria-expanded="false">
                 <strong>mdo</strong>
             </a>
             <ul class="dropdown-menu dropdown-menu-dark text-small shadow dropdown-menu-end">
                 <li><a class="dropdown-item" href="#">New project...</a></li>
                 <li><a class="dropdown-item" href="#">Settings</a></li>
                 <li><a class="dropdown-item" href="#">Profile</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="#">Sign out</a></li>
+                <li>
+                    <hr class="dropdown-divider">
+                </li>
+
+                <form action="{{ route('logout') }}" method="post">
+                    @csrf
+                    <li><a class="dropdown-item" href="#">Sign out</a></li>
+
+                </form>
             </ul>
         </div>
     </div>

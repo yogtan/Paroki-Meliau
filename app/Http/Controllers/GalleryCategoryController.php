@@ -6,6 +6,7 @@ use App\Models\Gallery_Category;
 use App\Http\Requests\StoreGallery_CategoryRequest;
 use App\Http\Requests\UpdateGallery_CategoryRequest;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Storage;
 
 class GalleryCategoryController extends Controller
 {
@@ -16,7 +17,8 @@ class GalleryCategoryController extends Controller
      */
     public function index()
     {
-        //
+        $albums = Gallery_Category::all();
+        return view('galeri.galeri', compact('albums'));
     }
 
 
@@ -41,15 +43,24 @@ class GalleryCategoryController extends Controller
     {
 
 
-
         $request->validate([
             'name' => 'required',
+            'image' => 'required',
             'description' => 'required',
         ]);
-
+        
+        
+        $file = $request->file('image');
+        
+        $path = time() . '_' . $request->name . '.' . $file->getClientOriginalExtension();
+        
+        
+        Storage::disk('local')->put('public/' . $path, file_get_contents($file));
+        // dd($path);
 
         Gallery_Category::create([
             'name' => $request->name,
+            'image' => $path,
             'description' => $request->description,
         ]);
 
@@ -111,13 +122,23 @@ class GalleryCategoryController extends Controller
     {
         $request->validate([
             'name' => 'required',
+            'image' => 'required',
             'description' => 'required',
         ]);
 
-        $album->update([
+        dd('image');
+        $file = $request->file('image');
+
+        $path = time() . '_' . $request->title . '.' . $file->getClientOriginalExtension();
+        
+        Storage::disk('local')->put('public/' . $path, file_get_contents($file));
+
+        Gallery_Category::create([
             'name' => $request->name,
-            'description' => $request->description
+            'image' => $path,
+            'description' => $request->description,
         ]);
+
 
         return Redirect::route('admin_show_album');
     }

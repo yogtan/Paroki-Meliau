@@ -17,9 +17,14 @@ class GaleryController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index_detail($id)
     {
-        //
+        $album = Gallery_Category::find($id);
+
+        // @dd($albums);
+        $fotos = $album->fotos;
+        return view('galeri.detail-galeri', compact('fotos'));
+
     }
 
     /**

@@ -16,6 +16,7 @@ return new class extends Migration
         Schema::create('gallery_categories', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('image')->nullable(true); 
             $table->string('description')->nullable(true); 
             $table->timestamps();
         });
