@@ -27,7 +27,7 @@ class Admin
     {
         
         if (!Auth::check() || Auth::user()->is_admin == false) {
-            return Redirect::route( 'admin_dashboard' );
+            return Redirect::route('login');
         }
         return $next($request);
     }

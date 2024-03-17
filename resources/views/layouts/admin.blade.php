@@ -126,7 +126,6 @@
 
 {{-- Sidebarrr --}}
 <style>
-
     .sidebar {
         transition: margin-left 0.5s;
     }
@@ -141,9 +140,7 @@
         margin-left: 0;
     }
 
-    @media (max-width: 768px) {
- 
-    }
+    @media (max-width: 768px) {}
 </style>
 
 <script>
@@ -186,7 +183,7 @@
                 }
             });
 
-lor
+        
         });
     });
 </script>

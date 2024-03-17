@@ -64,75 +64,83 @@
     </script>
     -->
 </body>
-
 <script>
     document.addEventListener('DOMContentLoaded', function() {
-        var popup = document.getElementById('popup');
-        var img = document.querySelector('.img-hero');
-        var title = document.getElementById('title');
-        var subtitle = document.getElementById('subtitle');
-        var schedule = document.getElementById('schedule');
-        var sekretariat = document.getElementById('sekretariat');
-        var ayat = document.getElementById('ayat');
-        var navbar = document.getElementById('navbar');
-        var navbarLogo = document.getElementById('navbar-logo');
+    var popup = document.getElementById('popup');
+    var img = document.querySelector('.img-hero');
+    var title = document.getElementById('title');
+    var subtitle = document.getElementById('subtitle');
+    var schedule = document.getElementById('schedule');
+    var sekretariat = document.getElementById('sekretariat');
+    var ayat = document.getElementById('ayat');
+    var navbar = document.getElementById('navbar');
+    var navbarLogo = document.getElementById('navbar-logo');
 
-        window.addEventListener('scroll', function() {
+    function adjustNavbarStyle() {
+        if (window.innerWidth < 768) {
+            navbar.classList.remove('transparent');
+            navbar.classList.add('white');
+            navbarLogo.src = '../img/Logo-black.svg';
+        } else {
             if (window.scrollY > 50) {
                 navbar.classList.remove('transparent');
                 navbar.classList.add('white');
-
                 navbarLogo.src = '../img/Logo-black.svg';
             } else {
                 navbar.classList.remove('white');
                 navbar.classList.add('transparent');
-              
-                navbarLogo.src = '../img/Logo.svg'; 
+                navbarLogo.src = '../img/Logo.svg';
             }
-        });
-
-        img.style.opacity = '0';
-        setTimeout(function() {
-            img.style.transition = 'opacity 1s ease';
-            img.style.opacity = '1';
-
-        }, 500);
-
-        title.style.opacity = '0';
-        setTimeout(function() {
-            title.style.transition = 'opacity 1s ease';
-            title.style.opacity = '1';
-
-        }, 1000);
-
-        subtitle.style.opacity = '0';
-        setTimeout(function() {
-            subtitle.style.transition = 'opacity 1s ease';
-            subtitle.style.opacity = '1';
-            
-        }, 1500);
-        ayat.style.opacity = '0';
-        setTimeout(function() {
-            ayat.style.transition = 'opacity 1s ease';
-            ayat.style.opacity = '1';
-
-        }, 1500);
-
-        setTimeout(function() {
-            schedule.style.opacity = '1';
-            schedule.style.transform = 'translateX(0)'; /* Menggeser elemen kembali ke posisi semula */
-        }, 1500);
-
-        setTimeout(function() {
-            sekretariat.style.opacity = '1';
-            sekretariat.style.transform =
-                'translateX(0)'; /* Menggeser elemen kembali ke posisi semula */
-        }, 1500);
+        }
+    }
+    adjustNavbarStyle();
+    window.addEventListener('scroll', function() {
+        adjustNavbarStyle();
     });
 
+    window.addEventListener('resize', function() {
+        adjustNavbarStyle();
+    });
 
+    img.style.opacity = '0';
+    setTimeout(function() {
+        img.style.transition = 'opacity 1s ease';
+        img.style.opacity = '1';
+    }, 500);
 
-    
+    title.style.opacity = '0';
+    setTimeout(function() {
+        title.style.transition = 'opacity 1s ease';
+        title.style.opacity = '1';
+    }, 1000);
+
+    subtitle.style.opacity = '0';
+    setTimeout(function() {
+        subtitle.style.transition = 'opacity 1s ease';
+        subtitle.style.opacity = '1';
+    }, 1500);
+
+    ayat.style.opacity = '0';
+    setTimeout(function() {
+        ayat.style.transition = 'opacity 1s ease';
+        ayat.style.opacity = '1';
+    }, 1500);
+
+    // setTimeout(function() {
+    //     schedule.style.opacity = '1';
+    //     schedule.style.transform = 'translateX(0)';
+    // }, 1500);
+
+    // setTimeout(function() {
+    //     sekretariat.style.opacity = '1';
+    //     sekretariat.style.transform = 'translateX(0)';
+    // }, 1500);
+});
+
 </script>
+
+
+
+
 
 </html>

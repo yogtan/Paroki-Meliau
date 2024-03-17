@@ -7,19 +7,19 @@
         </a>
         <hr>
         <ul class="nav nav-pills flex-column mb-auto">
-            <li class="nav-item">
+            <li class="nav-item mb-1">
                 <a href="/admin/dashboard" class="nav-link text-white {{ Request::is('admin/dashboard*') ? 'active' : '' }}" aria-current="page">
                     {{-- <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#home"/></svg> --}}
                     Dashboard
                 </a>
             </li>
-            <li>
+            <li class="nav-item mb-1">
                 <a href="/admin/posts" class="nav-link text-white {{ Request::is('admin/posts*') ? 'active' : '' }}" aria-current="page">
                     {{-- <svg class="bi pe-none me-2" width="16" height="16"><use xlink:href="#table"/></svg> --}}
                     Posts
                 </a>
             </li>
-            <li>
+            <li class="nav-item mb-1">
                 <a href="/admin/kategorial" class="nav-link text-white {{ Request::is('admin/kategorial*') ? 'active' : '' }}" aria-current="page">
                     {{-- <svg class="bi pe-none me-2" width="16" height="16"> --}}
                         <use xlink:href="#grid" />
@@ -27,7 +27,7 @@
                     Kategorial
                 </a>
             </li>
-            <li>
+            <li class="nav-item mb-1">
                 <a href="/admin/dokumen" class="nav-link text-white {{ Request::is('admin/dokumen*') ? 'active' : '' }}" aria-current="page">
                     {{-- <svg class="bi pe-none me-2" width="16" height="16"> --}}
                         <use xlink:href="#grid" />
@@ -35,7 +35,7 @@
                 Dokumen   
                 </a>
             </li>
-            <li>
+            <li class="nav-item mb-1">
                 <a href="/admin/galeri" class="nav-link text-white {{ Request::is('admin/galeri*') ? 'active' : '' }}" aria-current="page">
                     {{-- <svg class="bi pe-none me-2" width="16" height="16"> --}}
                         <use xlink:href="#grid" />

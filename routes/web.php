@@ -1,11 +1,13 @@
 <?php
 
+use App\Http\Controllers\Auth\LoginController;
 use App\Http\Controllers\DocumentController;
 use App\Http\Controllers\PostController;
 use App\Http\Controllers\KategorialController;
 use App\Http\Controllers\CategoryController;
 use App\Http\Controllers\GaleryController;
 use App\Http\Controllers\GalleryCategoryController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\MemberController;
 use App\Models\Category;
 use App\Models\Document;
@@ -36,6 +38,7 @@ Route::middleware([]);
 
 Route::middleware(['admin'])->group(function () {
 
+    // Route::get('/home', [HomeController::class, 'index'])->name('home');
     Route::get('/admin/dashboard', [CategoryController::class, 'index'])->name('admin_dashboard');
     Route::get('/admin/posts/create', [PostController::class, 'show_create'])->name('admin_show_create');
     Route::post('/admin/posts/create', [PostController::class, 'store'])->name('admin_create_posts');
@@ -78,34 +81,25 @@ Route::middleware(['admin'])->group(function () {
     Route::get('/admin/{album}/foto', [GaleryController::class, 'show_create'])->name('admin_show_galeri');
     Route::post('/admin/{album}/foto', [GaleryController::class, 'store'])->name('admin_create_galeri');
     Route::delete('/admin/{foto}/foto', [GaleryController::class, 'destroy'])->name('admin_destroy_foto');
-    Route::post('/logout', [Auth::class, 'logout'])->name('logout');
+    Route::post('/logout', [LoginController::class, 'logout'])->name('logout');
 });
 // USERrrr
 
+Route::get('/ ', [PostController::class, 'index'])->name('show_posts');
+Route::get('/romo', [MemberController::class, 'show_romo'])->name('show_romo');
+Route::get('/sekretariat', [DocumentController::class, 'index'])->name('show_dokumen');
+Route::get('/dewan-paroki', [MemberController::class, 'show_dpp'])->name('show_dpp');
+Route::get('/berita ', [PostController::class, 'index'])->name('show_berita');
+Route::get('/galeri ', [GalleryCategoryController::class, 'index'])->name('show_galeri');
+Route::get('/galeri/{id} ', [GaleryController::class, 'index_detail'])->name('detail_galeri');
+Route::get('/berita/{id} ', [PostController::class, 'index_detail'])->name('detail_berita');
+Route::get('/kategorial', [KategorialController::class, 'index'])->name('show_kategorial');
+Route::get('/kategorial/{id}', [KategorialController::class, 'index_detail'])->name('show_detail_kategorial');
+Route::get('/kontak', fn() => view('information.kontak'));
+Route::get('/donasi', fn() => view('information.donasi'));
+Route::get('/sejarah', fn() => view('about.sejarah'));
 
 
-Route::middleware(['auth'])->group(function () {
-    // Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-    Route::get('/ ', [PostController::class, 'index'])->name('show_posts');
-    Route::get('/romo', [MemberController::class, 'show_romo'])->name('show_romo');
-    Route::get('/sekretariat', [DocumentController::class, 'index'])->name('show_dokumen');
-    Route::get('/dewan-paroki', [MemberController::class, 'show_dpp'])->name('show_dpp');
-    Route::get('/berita ', [PostController::class, 'index'])->name('show_berita');
-    Route::get('/galeri ', [GalleryCategoryController::class, 'index'])->name('show_galeri');
-    Route::get('/galeri/{id} ', [GaleryController::class, 'index_detail'])->name('detail_galeri');
-    Route::get('/berita/{id} ', [PostController::class, 'index_detail'])->name('detail_berita');
-    Route::get('/kategorial', [KategorialController::class, 'index'])->name('show_kategorial');
-    Route::get('/kategorial/{id}', [KategorialController::class, 'index_detail'])->name('show_detail_kategorial');
-    Route::get('/kontak', function () {
-        return view('information.kontak');
-    });
-    Route::get('/donasi', function () {
-        return view('information.donasi');
-    });
-    Route::get('/sejarah', function () {
-        return view('about.sejarah');
-    });
-});
 // Route::get('/', function () {
 //     return view('home');
 // });

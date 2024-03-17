@@ -1,14 +1,16 @@
 <nav class="navbar navbar-expand-lg fixed-top bg-transparent" id="navbar">
     <div class="container">
-        <a class="navbar-brand" href="../admin/dashboard"><img src="../img/logo.svg" id="navbar-logo" alt=""></a>
+        
+        <a class="navbar-brand" href="/"><img src="../img/logo.svg" id="navbar-logo" alt=""></a>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
             aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+           <img src="../img/Menu.svg" alt="" width="50px"></span>
         </button>
+
         <div class="collapse navbar-collapse" id="navbarScroll">
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
                 <li class="nav-item">
-                    <a class="nav-link active mx-4" aria-current="page" href="/">HOME</a>
+                    <a class="nav-link active " aria-current="page" href="/">HOME</a>
                 </li>
 
                 <li class="nav-item dropdown">
@@ -23,10 +25,10 @@
                     </ul>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active mx-4" aria-current="page" href="/sekretariat">SEKRETARIAT</a>
+                    <a class="nav-link active " aria-current="page" href="/sekretariat">SEKRETARIAT</a>
                 </li>
                 <li class="nav-item dropdown">
-                    <a class="nav-link active me-4" aria-current="page" href="/galeri">GALERI</a>
+                    <a class="nav-link active " aria-current="page" href="/galeri">GALERI</a>
                 </li>
                 <li class="nav-item dropdown  ">
                     <a class="nav-link dropdown-toggle  " href="#" role="button" data-bs-toggle="dropdown"

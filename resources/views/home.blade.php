@@ -1,7 +1,7 @@
 @extends('layouts.main')
 
 @section('container')
-    <section class="home-hero">
+    <section class="home-hero" style="background-image: url('../img/Hero-BG.svg')">
         <div class="container">
             <div class="d-flex justify-content-center align-items-center h-100">
                 <div class="text-white text-center" id="popup">
@@ -17,7 +17,7 @@
 
     <section class="home-schedule mt-5">
         <div class="container">
-            <div class="row">
+            <div class="row ">
                 <div class="col-md-4  mb-3" id="schedule">
 
                     <div class="card w-100" style="width: 25rem;">

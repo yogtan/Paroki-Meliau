@@ -16,11 +16,13 @@
                 <hr>
                 <div class="text-center mb-3">
                     <img src="{{ url('storage/' . $posts->image) }}" alt=""
-                        style="width: 1300px; object-fit: cover; height:300px; ">
+                    class="img-fluid"  style="width: 1300px; object-fit: cover; height:300px; ">
 
                 </div>
                 <p>{{ $posts->content }}</p>
             </div>
         </div>
     </section>
+
+    
 @endsection

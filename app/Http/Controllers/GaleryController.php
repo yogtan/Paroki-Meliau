@@ -62,7 +62,7 @@ class GaleryController extends Controller
             ]);
         }
 
-        return Redirect::back();
+        return Redirect::route('admin_show_album');
     }
 
     /**

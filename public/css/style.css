@@ -17,8 +17,14 @@ body {
     margin-top: 0px;
     padding: 0px;
 }
+.navbar-toggler {
+    z-index: 1000; /* Pastikan tombol toggler memiliki indeks z yang lebih tinggi */
+    color: black; /* Atur warna ikon toggler agar tetap terlihat di atas latar belakang putih */
+}
+
 
 .navbar .nav-item .nav-link {
+    margin: 10px;
     font-weight: 500;
     font-size: 14px;
     color: white;
@@ -57,24 +63,24 @@ body {
     display: flex;
     background-position: center;
     min-height: 70vh;
-    background-image: url(../img/hero-BG.svg);
+    /* background-image: url(../img/Herooo.svg); */
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
 
 }
 
-#schedule {
+/* #schedule {
     opacity: 0;
-    transform: translateX(-50px); /* Geser elemen ke kiri di luar layar */
-    transition: opacity 1s ease, transform 1s ease; /* Animasi perubahan opacity dan transformasi */
+    transform: translateY(-5px); 
+    transition: opacity 1s ease, transform 1s ease;
 }
 
 #sekretariat {
     opacity: 0;
-    transform: translateX(50px); /* Geser elemen ke kanan di luar layar */
-    transition: opacity 1s ease, transform 1s ease; /* Animasi perubahan opacity dan transformasi */
-}
+    transform: translateY(-5px); 
+    transition: opacity 1s ease, transform 1s ease; 
+} */
 
 
 

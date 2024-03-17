@@ -14,21 +14,22 @@
         <div class="dropdown mx-3">
             <a href="#" class="d-flex align-items-center text-white text-decoration-none dropdown-toggle"
                 data-bs-toggle="dropdown" aria-expanded="false">
-                <strong>mdo</strong>
+                <strong>{{ Auth::user()->name }}</strong>
             </a>
             <ul class="dropdown-menu dropdown-menu-dark text-small shadow dropdown-menu-end">
-                <li><a class="dropdown-item" href="#">New project...</a></li>
-                <li><a class="dropdown-item" href="#">Settings</a></li>
-                <li><a class="dropdown-item" href="#">Profile</a></li>
+                <li><a class="dropdown-item" href="/">Chruch Home</a></li>
                 <li>
                     <hr class="dropdown-divider">
                 </li>
 
-                <form action="{{ route('logout') }}" method="post">
+                <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                     @csrf
-                    <li><a class="dropdown-item" href="#">Sign out</a></li>
-
                 </form>
+                <a class="dropdown-item" href="/"
+                    onclick="event.preventDefault(); document.getElementById('logout-form').submit();">
+                    Sign out
+                </a>
+
             </ul>
         </div>
     </div>
